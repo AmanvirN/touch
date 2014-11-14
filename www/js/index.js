@@ -2,21 +2,21 @@
 
 $(document).on("pagecreate","#pageone",function(){
   
-  	$('#tapholdtext').on("taphold",function(){
-    	$(this).hide();
- 	});                       
+  	//$('#tapholdtext').on("taphold",function(){
+    //	$(this).hide();
+ 	//});                       
 
-	$('#taptext').on("tap",function(){
-    	$(this).css('color', 'red');
- 	}); 
+	//$('#taptext').on("tap",function(){
+    //	$(this).css('color', 'red');
+ 	//}); 
 
-	$('#swipetext').on("swipeleft",function(){
-    	$(this).css('color', 'green');
-  	});   
+	//$('#swipetext').on("swipeleft",function(){
+    //	$(this).css('color', 'green');
+  	//});   
 	
-	$('#swipetext').on("swiperight",function(){
-    	$(this).css('color', 'blue');
-  	});  
+	//$('#swipetext').on("swiperight",function(){
+    //	$(this).css('color', 'blue');
+  	//});  
 	
 	$('#taprandom').on("tap",function(){
     	$(this).css('color', 'green');
@@ -25,21 +25,17 @@ $(document).on("pagecreate","#pageone",function(){
   	});  
 	
 function random() { 
-	
-	var display;
 	var TextNo = !Math.round(Math.random());
 	
 	if (TextNo <=0.5)
 	{
-	display = "true";
+	alert("True");
 	}
 	
 	if (TextNo >0.5)
 	{
-	display = "false";
+	alert("False");
 	}
-	alert(display);
-
 	//return !Math.round(Math.random());
 }
 });
