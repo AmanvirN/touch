@@ -30,11 +30,15 @@ function random() {
 	if (TextNo <=0.5)
 	{
 	alert("True");
+	vibrate for 2000 milliseconds 
+	navigator.notification.vibrate(2000);
 	}
 	
 	if (TextNo >0.5)
 	{
 	alert("False");
+	vibrate for 2000 milliseconds 
+	navigator.notification.vibrate(2000);
 	}
 	//return !Math.round(Math.random());
 }
