@@ -17,5 +17,29 @@ $(document).on("pagecreate","#pageone",function(){
 	$('#swipetext').on("swiperight",function(){
     	$(this).css('color', 'blue');
   	});  
+	
+	$('#taprandom').on("tap",function(){
+    	$(this).css('color', 'green');
+		random();
+		
+  	});  
+	
+function random() { 
+	
+	var display;
+	var TextNo = !Math.round(Math.random());
+	
+	if (TextNo <=0.5)
+	{
+	display = "true";
+	}
+	
+	if (TextNo >0.5)
+	{
+	display = "false";
+	}
+	alert(display);
 
+	//return !Math.round(Math.random());
+}
 });
